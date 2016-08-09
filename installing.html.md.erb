@@ -1,28 +1,28 @@
 ---
-title: Installing and Configuring the Guardtime Blockchain Enabled Service Tile
+title: Installing and Configuring the Guardtime Blockchain-enabled Service Broker
 owner: Partners
 ---
 
-This topic describes how to install and configure the Guardtime Blockchain Enabled Service Tile, as well as how to create an instance of the Guardtime Blockchain Services service from the Marketplace of your Pivotal Cloud Foundry (PCF) deployment.
+This topic describes how to install and configure the Guardtime Blockchain-enabled Service Broker, as well as how to create an instance of the Guardtime Blockchain Services service from the Marketplace of your Pivotal Cloud Foundry (PCF) deployment.
 
-##<a id="installing"></a> Install the Guardtime Blockchain Enabled Service Tile
+##<a id="installing"></a> Install the Guardtime Blockchain-enabled Service Broker
 
 1. Download the product file from Pivotal Network.
 1. Upload the product file on the Ops Manager Installation Dashboard.
-1. Click **Add** next to the uploaded Guardtime Blockchain Enabled Service Tile in the Ops Manager **Available Products** view to add it to your staging area.
+1. Click **Add** next to the uploaded Guardtime Blockchain-enabled Service Broker in the Ops Manager **Available Products** view to add it to your staging area.
 1. Click the newly added tile.
-1. From the **Settings** tab, click **Guardtime Blockchain Enabled Service Tile** and complete the following fields with information provided by your Guardtime support engineer at pivotal.support@guardtime.com:
+1. From the **Settings** tab, click **Guardtime Blockchain-enabled Service Broker** and complete the following fields with information provided by your Guardtime support engineer at pivotal.support@guardtime.com:
 	<%= image_tag('config.png') %>
 	* **Administrator Account**: Enter the administrator account for your Guardtime KSI blockchain service.
 	* **Administrator Password**: Enter the administrator password for your Guardtime KSI blockchain service.
 	* **Guardtime Blockchain Service Endpoint**: Enter the endpoint for your Guardtime KSI blockchain service. This endpoint can be specific to a single customer or shared.
 	* **Guardtime Blockchain Service Port**: Enter the port for your Guardtime KSI blockchain service.
 1. Click **Save**.
-1. Return to the Ops Manager Installation Dashboard and click **Apply Changes** to install the Guardtime Blockchain Enabled Service Tile.
+1. Return to the Ops Manager Installation Dashboard and click **Apply Changes** to install the Guardtime Blockchain-enabled Service Broker.
 
 ##<a id='create-db'></a> Create a Guardtime KSI Access Service Instance in Apps Manager
 
-After installing the Guardtime Blockchain Enabled Service Tile, Guardtime Blockchain Services appears as a service in the Marketplace of your deployment. 
+After installing the Guardtime Blockchain-enabled Service Broker, Guardtime Blockchain Services appears as a service in the Marketplace of your deployment. 
 
 Developers can create instances of the Guardtime Blockchain Services service using Apps Manager or the cf Command Line Interface (CLI). By binding these instances to applications, developers can enable applications to sign and verify data using Guardtime KSI.
 

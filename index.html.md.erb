@@ -1,19 +1,19 @@
 ---
-title: Guardtime Blockchain Enabled Service Tile for Pivotal Cloud Foundry
+title: Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry
 owner: Partners
 ---
 
-This documentation describes the Guardtime Blockchain Enabled Service Tile for Pivotal Cloud Foundry (PCF). By using the Guardtime Blockchain Enabled Service Tile, applications and application service instances can sign data using Guardtime's Keyless Signature Infrastructure (KSI) that provides cryptographic signatures in real time.
+This documentation describes the Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry (PCF). By using the Guardtime Blockchain-enabled Service Broker, applications and application service instances can sign data using Guardtime's Keyless Signature Infrastructure (KSI) that provides cryptographic signatures in real time.
 
-The Guardtime Blockchain Enabled Service Tile registers a service broker on PCF and exposes the Guardtime Blockchain Services service on the Marketplace. Developers can create service instances of Guardtime Blockchain Services and bind them to their applications using Apps Manager or the cf Command Line Interface (CLI). Bound applications can sign and verify data using Guardtime KSI.
+The Guardtime Blockchain-enabled Service Broker registers a service broker on PCF and exposes the Guardtime Blockchain Services service on the Marketplace. Developers can create service instances of Guardtime Blockchain Services and bind them to their applications using Apps Manager or the cf Command Line Interface (CLI). Bound applications can sign and verify data using Guardtime KSI.
 
 ## <a id="snapshot"></a>Product Snapshot
 
 <dl>
-<dt>Guardtime Blockchain Enabled Service Tile for Pivotal Cloud Foundry Details:</dt>
+<dt>Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry Details:</dt>
 <dd><strong>Version</strong>: 0.0.7 </dd>
 <dd><strong>Release Date</strong>: 08-16-2016</dd>
-<dd><strong>Software component version</strong>: Guardtime Blockchain Enabled Service Tile for Pivotal Cloud Foundry 0.0.7</dd>
+<dd><strong>Software component version</strong>: Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry 0.0.7</dd>
 <dd><strong>Compatible Ops Manager Version(s)</strong>: 1.5.x, 1.6.x, 1.7.x</dd>
 <dd><strong>Compatible Elastic Runtime Version(s)</strong>: 1.4.x, 1.5.x, 1.6.x, 1.7.x</dd>
 <dd><strong>vSphere support?</strong> Yes</dd>
@@ -23,10 +23,10 @@ The Guardtime Blockchain Enabled Service Tile registers a service broker on PCF 
 
 ## <a id="reqs"></a>Requirements
 
-The Guardtime Blockchain Enabled Service Tile has the following requirements:
+The Guardtime Blockchain-enabled Service Broker has the following requirements:
 
 * A Guardtime KSI blockchain service endpoint, port, administrator account, and administrator password. See the [License](#license) section below for information about obtaining a Guardtime KSI 60-day free trial.  
-* The Redis for PCF tile. The Guardtime Blockchain Enabled Service Tile uses a Redis datastore to hold metadata and binding information. For more information about how to install Redis for PCF, see the [documentation](../redis/index.html). 
+* The Redis for PCF tile. The Guardtime Blockchain-enabled Service Broker uses a Redis datastore to hold metadata and binding information. For more information about how to install Redis for PCF, see the [documentation](../redis/index.html). 
 
 <p class="note"><strong>Note</strong>: In a development environment, you can run a local Redis server instead of the Redis for PCF tile. See the <a href="http://redis.io/topics/quickstart">Redis documentation</a> for more information.</p>
 
