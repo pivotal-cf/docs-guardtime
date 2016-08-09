@@ -5,7 +5,7 @@ owner: Partners
 
 This documentation describes the Guardtime Blockchain Enabled Service Tile for Pivotal Cloud Foundry (PCF). By using the Guardtime Blockchain Enabled Service Tile, applications and application service instances can sign data using Guardtime's Keyless Signature Infrastructure (KSI) that provides cryptographic signatures in real time.
 
-The Guardtime Blockchain Enabled Service Tile registers a service broker on PCF and exposes the Guardtime KSI Access service on the Marketplace. Developers can create service instances of Guardtime KSI Access and bind them to their applications using Apps Manager or the cf Command Line Interface (CLI). Bound applications can sign and verify data using Guardtime KSI.
+The Guardtime Blockchain Enabled Service Tile registers a service broker on PCF and exposes the Guardtime Blockchain Services service on the Marketplace. Developers can create service instances of Guardtime Blockchain Services and bind them to their applications using Apps Manager or the cf Command Line Interface (CLI). Bound applications can sign and verify data using Guardtime KSI.
 
 ## <a id="snapshot"></a>Product Snapshot
 
@@ -17,6 +17,8 @@ The Guardtime Blockchain Enabled Service Tile registers a service broker on PCF 
 <dd><strong>Compatible Ops Manager Version(s)</strong>: 1.5.x, 1.6.x, 1.7.x</dd>
 <dd><strong>Compatible Elastic Runtime Version(s)</strong>: 1.4.x, 1.5.x, 1.6.x, 1.7.x</dd>
 <dd><strong>vSphere support?</strong> Yes</dd>
+<dd><strong>AWS support?</strong> Yes</dd>
+<dd><strong>OpenStack support?</strong> Yes</dd>
 </dl>
 
 ## <a id="reqs"></a>Requirements
@@ -24,8 +26,9 @@ The Guardtime Blockchain Enabled Service Tile registers a service broker on PCF 
 The Guardtime Blockchain Enabled Service Tile has the following requirements:
 
 * A Guardtime KSI blockchain service endpoint, port, administrator account, and administrator password. See the [License](#license) section below for information about obtaining a Guardtime KSI 60-day free trial.  
-* The Redis for PCF tile. The Guardtime Blockchain Enabled Service Tile uses a Redis datastore to hold metadata and binding information. For more information about how to install Redis for PCF, see the [documentation](../redis/index.html).
-* A local Redis service in the development environment.
+* The Redis for PCF tile. The Guardtime Blockchain Enabled Service Tile uses a Redis datastore to hold metadata and binding information. For more information about how to install Redis for PCF, see the [documentation](../redis/index.html). 
+
+<p class="note"><strong>Note</strong>: In a development environment, you can run a local Redis server instead of the Redis for PCF tile. See the <a href="http://redis.io/topics/quickstart">Redis documentation</a> for more information.</p>
 
 ## <a id="feedback"></a>Feedback
 
