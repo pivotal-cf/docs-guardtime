@@ -3,23 +3,43 @@ title: Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry
 owner: Partners
 ---
 
-This documentation describes the Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry (PCF). By using the Guardtime Blockchain-enabled Service Broker, applications and application service instances can sign data using Guardtime's Keyless Signature Infrastructure (KSI) that provides cryptographic signatures in real time.
+<strong>WARNING! </strong>
+The Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry (PCF) tile is currently in beta and is intended for evaluation and test purposes only. 
+Do not use this product in a PCF production environment.
+</p>
+
+This documentation describes the Guardtime Blockchain-enabled Service Broker for PCF. By using the Guardtime Blockchain-enabled Service Broker, applications and application service instances can sign data using Guardtime's Keyless Signature Infrastructure (KSI) that provides cryptographic signatures in real time.
 
 The Guardtime Blockchain-enabled Service Broker registers a service broker on PCF and exposes the Guardtime Blockchain Services service on the Marketplace. Developers can create service instances of Guardtime Blockchain Services and bind them to their applications using Apps Manager or the cf Command Line Interface (CLI). Bound applications can sign and verify data using Guardtime KSI.
 
 ## <a id="snapshot"></a>Product Snapshot
 
-<dl>
-<dt>Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry Details:</dt>
-<dd><strong>Version</strong>: 0.0.8 </dd>
-<dd><strong>Release Date</strong>: 06-07-2017</dd>
-<dd><strong>Software component version</strong>: Guardtime Blockchain-enabled Service Broker for Pivotal Cloud Foundry 0.0.8</dd>
-<dd><strong>Compatible Ops Manager Version(s)</strong>: 1.5.x, 1.6.x, 1.7.x, 1.8.x, 1.9.x</dd>
-<dd><strong>Compatible Elastic Runtime Version(s)</strong>: 1.4.x, 1.5.x, 1.6.x, 1.7.x, 1.8.x, 1.9.x</dd>
-<dd><strong>vSphere support?</strong> Yes</dd>
-<dd><strong>AWS support?</strong> Yes</dd>
-<dd><strong>OpenStack support?</strong> Yes</dd>
-</dl>
+The following table provides version and version-support information about Guardtime Blockchain-enabled Service Broker for PCF.
+
+<table class="nice">
+    <th>Element</th>
+    <th>Details</th>
+    <tr>
+        <td>Version</td>
+        <td>v0.0.8</td>
+    </tr>
+    <tr>
+        <td>Release date</td>
+        <td>June 7, 2017</td>
+    </tr>
+    <tr>
+        <td>Compatible Ops Manager version(s)</td>
+        <td>v1.5.x, v1.6.x, v1.7.x, v1.8.x, and v1.9.x</td>
+    </tr>
+    <tr>
+        <td>Compatible Elastic Runtime version(s)</td>
+        <td>v1.4.x, v1.5.x, v1.6.x, v1.7.x, v1.8.x, and v1.9.x</td>
+    </tr>
+    <tr>
+        <td>IaaS support</td>
+        <td>AWS, OpenStack, and vSphere</td>
+    </tr>
+</table>
 
 ## <a id="reqs"></a>Requirements
 
@@ -32,7 +52,7 @@ The Guardtime Blockchain-enabled Service Broker has the following requirements:
 
 ## <a id="feedback"></a>Feedback
 
-Please provide any bugs, feature requests, or questions to the [Pivotal Cloud Foundry Feedback](mailto:pivotal-cf-feedback@pivotal.io) list and to the [Guardtime Pivotal Support Center](mailto:pivotal.support@guardtime.com).
+If you have a feature request, questions, or information about a bug, please email to the [Pivotal Cloud Foundry Feedback](mailto:pivotal-cf-feedback@pivotal.io) list and to the [Guardtime Pivotal Support Center](mailto:pivotal.support@guardtime.com).
 
 ## <a id='license'></a>License
 
